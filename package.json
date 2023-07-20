@@ -1,0 +1,23 @@
+{
+  "name": "algorithm",
+  "version": "1.0.0",
+  "description": "To make it easy for you to get started with GitLab, here's a list of recommended next steps.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon easy/$file"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/manideva6/algorithm.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/manideva6/algorithm/issues"
+  },
+  "homepage": "https://gitlab.com/manideva6/algorithm#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
