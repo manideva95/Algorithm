@@ -2,9 +2,9 @@
 
 class Solution {
     seriesSum(n) {
-        // code here
-        console.log('hello')
+        let sum;
+    return sum=n/2*(n+1)
     }
 } 
 
-new Solution().seriesSum(1);
+new Solution().seriesSum();
