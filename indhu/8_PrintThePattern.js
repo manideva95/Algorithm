@@ -17,11 +17,11 @@ class Solution {
           d = 2;
         }
       }
-      result[i-1] = resp;
+      result[i - 1] = resp;
     }
-    let stringArray=[];
-    for(let i=0;i<result.length; i++){
-      stringArray[i]= result[i].join(' ')
+    let stringArray = [];
+    for (let i = 0; i < result.length; i++) {
+      stringArray[i] = result[i].join(' ')
     }
     console.log(stringArray);
     return stringArray.join(' $ ');

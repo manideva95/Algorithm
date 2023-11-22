@@ -25,6 +25,7 @@ class Solution {
             const findFloat= (array[halfTheLength] + array[halfTheLength - 1]) / 2;
             result= findFloat %1 == 0 ? findFloat: Math.round(findFloat)-1
         }
+        console.log(result);
         return result;
     }
 }

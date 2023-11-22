@@ -3,8 +3,8 @@
 class Solution {
     seriesSum(n) {
         let sum;
-    return sum=n/2*(n+1)
+        return sum = n / 2 * (n + 1)
     }
-} 
+}
 
 new Solution().seriesSum();

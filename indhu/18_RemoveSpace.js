@@ -3,6 +3,7 @@
 class Solution{
     modify(s){
      const data=  s.split('').filter(item=>item.replace(' ','')).join('');
+     console.log(data);
      return data;
     }
 }

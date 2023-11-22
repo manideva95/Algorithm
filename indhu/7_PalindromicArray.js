@@ -2,10 +2,11 @@
 
 class Solution {
     PalinArray(arr, n) {
-        let result=1;
+        let result = 1;
         for (let i = 0; i < arr.length; i++) {
             const data = String(arr[i]).split('').reverse().join('', ',');
             if (data !== String(arr[i])) {
+                console.log(data);
                 result = 0
             }
         }

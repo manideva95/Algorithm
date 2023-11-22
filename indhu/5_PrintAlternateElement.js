@@ -2,12 +2,12 @@
 
 class Solution {
     print(arr, n) {
-        const data=[]
-        let j=0;
+        const data = []
+        let j = 0;
         for (let i = 0; i < arr.length; i++) {
             if (!(i % 2)) {
-                data[j]=(arr[i]);
-            j++;
+                data[j] = (arr[i]);
+                j++;
             }
         }
         console.log(data);
