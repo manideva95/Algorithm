@@ -18,3 +18,7 @@ https://hackernoon.com/14-patterns-to-ace-any-coding-interview-question-c5bb3357
 
 
 https://neetcode.io/practice
+
+
+
+https://www.techinterviewhandbook.org/grind75
