@@ -12,3 +12,13 @@ Optimization approaches like “Dynamic Programming”
 All core concepts you need for math, search, sorting and sets/ array algorithms
 Different kinds of solving problems (e.g. greedy approaches, dynamic approaches)
 By the end of the course, you will have a very solid foundation and a plan on how to tackle any problem and find a fitting algorithm! You will be well-prepared to dive deeper and explore more problems and algorithms.
+
+
+https://hackernoon.com/14-patterns-to-ace-any-coding-interview-question-c5bb3357f6ed
+
+
+https://neetcode.io/practice
+
+
+
+https://www.techinterviewhandbook.org/grind75
