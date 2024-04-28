@@ -1,0 +1,23 @@
+Remove Duplicates from Sorted Array: https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+Remove Duplicates from Sorted Array II: https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/
+Sort Colors: https://leetcode.com/problems/sort-colors/
+Move Zeroes: https://leetcode.com/problems/move-zeroes/
+Merge Sorted Array: https://leetcode.com/problems/merge-sorted-array/
+Two Sum II - Input array is sorted: https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
+3Sum Closest: https://leetcode.com/problems/3sum-closest/
+3Sum: https://leetcode.com/problems/3sum/
+Container With Most Water: https://leetcode.com/problems/container-with-most-water/
+Trapping Rain Water: https://leetcode.com/problems/trapping-rain-water/
+
+
+
+
+
+
+
+
+
+// Given an array seats[] where seat[i] is the number of vacant seats in the ith row in a stadium for a cricket match. 
+// There are N people in a queue waiting to buy the tickets.
+// Each seat costs equal to the number of vacant seats in the row it belongs to. The task is to maximize the profit by selling the tickets to N people.
+// seats[] = [2, 4, 3, 1, 5], N = 6 Ans = 22

@@ -1,0 +1,16 @@
+One-pass algorithm: This refers to an algorithmic approach that processes each element of the input data exactly once. It traverses the data sequentially, performs necessary computations or operations, and produces the final result without needing to revisit any elements. One-pass algorithms are designed to be efficient in terms of time and space complexity, especially for scenarios where multiple passes through the data are not feasible or efficient.
+
+One-pass Hash Table: This is a specific type of one-pass algorithm that involves the use of a hash table data structure to store information about elements encountered during traversal. As the algorithm processes each element, it may store relevant information in the hash table, allowing it to quickly access or manipulate data associated with previously seen elements without needing to revisit them. One-pass hash table algorithms are commonly used for tasks like finding duplicates, counting occurrences, or maintaining state information during traversal.
+
+In summary, while "one-pass algorithm" is a general term referring to algorithms that process data in a single pass, "one-pass hash table" specifically refers to algorithms that utilize a hash table to achieve this in an efficient manner. Not all one-pass algorithms necessarily involve hash tables; they can employ various techniques depending on the problem requirements and constraints.
+
+Two Sum
+Remove Duplicates from Sorted Array
+Best Time to Buy and Sell Stock II
+Move Zeroes
+Contains Duplicate
+Single Number
+Reverse Linked List
+Intersection of Two Arrays II
+Valid Parentheses
+Remove Element
