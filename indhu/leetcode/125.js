@@ -1,6 +1,6 @@
 class Solution {
 
-    twoSum(s) {
+    fn(s) {
         let S = s.toLowerCase().replace(/[^a-zA-Z0-9]/g, '').split('')
         let i = 0;
         let j = S.length - 1;
@@ -17,7 +17,7 @@ class Solution {
     }
 }
 
-const data = new Solution().twoSum("ab_   a");
+const data = new Solution().fn("ab_   a");
 console.log(data);
 
 

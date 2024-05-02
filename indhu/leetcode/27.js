@@ -1,6 +1,6 @@
 class Solution {
 
-    twoSum(nums, val) {
+    fn(nums, val) {
         nums.sort((a, b) => a - b)
         let i = nums[Math.round((nums.length - 1) / 2)] >= val ? 0 : Math.round((nums.length - 1) / 2);
         let j = nums.length - 1;
@@ -23,5 +23,5 @@ class Solution {
 
 }
 
-const data = new Solution().twoSum([3, 2, 2, 3], 2);
+const data = new Solution().fn([3, 2, 2, 3], 2);
 console.log(data);

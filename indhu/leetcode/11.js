@@ -1,6 +1,6 @@
 class Solution {
 
-    twoSum(numbers) {
+    fn(numbers) {
         let area = 0;
         let i = 0;
         let j = numbers.length - 1;
@@ -19,5 +19,5 @@ class Solution {
 
 }
 
-const data = new Solution().twoSum([1, 8, 6, 2, 5, 4, 8, 3, 7]);
+const data = new Solution().fn([1, 8, 6, 2, 5, 4, 8, 3, 7]);
 console.log(data);

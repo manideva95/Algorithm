@@ -1,6 +1,6 @@
 class Solution {
 
-    twoSum(haystack, needle) {
+    fn(haystack, needle) {
         let j = 0;
         let a = haystack.split('');
         let b = needle.split('');
@@ -22,5 +22,5 @@ class Solution {
 }
 
 
-const data = new Solution().twoSum("mississippi", "sissip");
+const data = new Solution().fn("mississippi", "sissip");
 console.log(data);
