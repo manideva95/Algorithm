@@ -38,11 +38,7 @@ console.log(data);
 
 // Observation:
 // vocabulary: inclusive
-// input: valid ip
-// output: replace . to [.]
-// Methods: replaceAll() [time complexity : O(n * m)]
-// output Time Complexity : O(n*m)
+// input: lower case only
+// Methods: split() [time complexity : O(n)], indexOf: O(n)
+// output Time Complexity : O(3n)
 
-
-// Alternate
-// address.split(".").join('[.]')  split[O(n)], join[O(n)] => output  O(2n)
