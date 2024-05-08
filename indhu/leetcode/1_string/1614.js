@@ -25,12 +25,8 @@ const data = new Solution().fn("(1+(2*3)+((8)/4))+1");
 console.log(data);
 
 // Observation:
-// vocabulary: defanged
-// input: valid ip
-// output: replace . to [.]
-// Methods: replaceAll() [time complexity : O(n * m)]
-// output Time Complexity : O(n*m)
+// input: valid parentheses string
+// output: max nested parantheses
+// Methods: for of [time complexity : O(n)]
+// output Time Complexity : O(n)
 
-
-// Alternate
-// address.split(".").join('[.]')  split[O(n)], join[O(n)] => output  O(2n)
