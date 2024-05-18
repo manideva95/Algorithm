@@ -17,12 +17,10 @@ class Solution {
         // Alternate
 
         const alphabets = Array(26).fill(0);
-        console.log(alphabets);
         let result = 0;
-
         for (let index = 0; index < s.length; index++) {
-            alphabets[s.charCodeAt(index) - 'a'.charCodeAt(0)]++;  //O(2N)
-            alphabets[t.charCodeAt(index) - 'a'.charCodeAt(0)]--;  //O(2N)
+            alphabets[s.charCodeAt(index) - 'a'.charCodeAt(0)]++;  //O(1)
+            alphabets[t.charCodeAt(index) - 'a'.charCodeAt(0)]--;  //O(1)
         }
 
         for (let count of alphabets)
@@ -33,7 +31,7 @@ class Solution {
 
 }
 
-const data = new Solution().fn('a', 'b');
+const data = new Solution().fn('aab', 'bba');
 console.log(data);
 
 // Observation:
