@@ -7,7 +7,6 @@
  */
 var removeOccurrences = function (s, part) {
     for (let i = s.length; i >= 0; i--) {
-        console.log(i);
         if (s == part) return ''
         s = s.replace(part, '')
     }
