@@ -14,10 +14,12 @@ var removeDuplicates = function (nums) {
             right++
         }
     }
-    console.log(nums)
+    console.log(left)
     return left
 };
 
-console.log(removeDuplicates([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]))
+console.log(removeDuplicates([1, 1, 2]))
 
 // [0,1,2,3,4,_,_,_,_,_]
+
+
