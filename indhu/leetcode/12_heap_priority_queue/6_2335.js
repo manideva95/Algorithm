@@ -17,4 +17,4 @@ const result = fillCups([5, 4, 4])
 console.log(result);
 
 // Observation:
-// output Time Complexity : O(n)
+// output Time Complexity : O(nlogn)

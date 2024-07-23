@@ -27,4 +27,4 @@ const result = maxSubsequence([5, 6, 7, 4, 2, 3], 3)
 console.log(result);
 
 // Observation:
-// output Time Complexity : O(n)
+// output Time Complexity : O(nlogn)

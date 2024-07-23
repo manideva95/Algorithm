@@ -23,4 +23,4 @@ const result = findRelativeRanks([1, 2, 5, 4, 3])
 console.log(result);
 
 // Observation:
-// output Time Complexity : O(n)
+// output Time Complexity : O(nlogn)

@@ -25,4 +25,4 @@ const result = largestInteger(51234)
 console.log(result);
 
 // Observation:
-// output Time Complexity : O(n)
+// output Time Complexity : O(nlogn)

@@ -24,4 +24,4 @@ const result = lastStoneWeight([2, 7, 4, 1, 8, 1, 34, 24, 23, 324, 245, 567, 745
 console.log(result);
 
 // Observation:
-// output Time Complexity : O(n)
+// output Time Complexity : O(n^2)

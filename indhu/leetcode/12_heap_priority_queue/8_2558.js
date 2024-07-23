@@ -19,4 +19,4 @@ const result = pickGifts([25, 64, 9, 4, 100, 34, 234, 234, 52, 34, 5, 34, 52, 3,
 console.log(result);
 
 // Observation:
-// output Time Complexity : O(n)
+// output Time Complexity : O(n^2)
