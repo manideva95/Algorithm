@@ -26,8 +26,8 @@ class BinarySearch {
         if (!this.root) this.root = newNode;
         else {
             let node = this.transver(this.root, parent);
-            if (node.right) node.left = newNode;
-            else node.right = newNode;
+            if (node.left) node.right = newNode;
+            else node.left = newNode;
         }
     }
 
@@ -37,25 +37,47 @@ class BinarySearch {
 }
 // Create tree
 let root = new BinarySearch();
-root.insert(null, 3);
-root.insert(3, 2);
-root.insert(3, 0)
-root.insert(2, 1)
-root.insert(2, 1)
+root.insert(null, 5);
+root.insert(5, 1);
+root.insert(5, 7)
+// root.insert(3, 2)
+// root.insert(3, 4)
+// root.insert(2, 1)
+// root.insert(6, null)
+// root.insert(6, 8)
+// root.insert(8, 7)
+// root.insert(8, 9)
 
+
+let newTree = null, prev = null;
 var evaluateTree = function (root) {
-    if (root.val == 1) return true;
-    else if (root.val == 0) return false;
-    else if (root.val == 2) return (evaluateTree(root.left) || evaluateTree(root.right));
-    else if (root.val == 3) return (evaluateTree(root.left) && evaluateTree(root.right));
-    return false;
+    // if (root.val == 1) return true;
+    // else if (root.val == 0) return false;
+    // else if (root.val == 2) return (evaluateTree(root.left) || evaluateTree(root.right));
+    // else if (root.val == 3) return (evaluateTree(root.left) && evaluateTree(root.right));
+    // return false;
+    if (!root) return newTree;
+
+
+    evaluateTree(root.left);
+    if (!newTree && root.val) {
+        newTree = new TreeNode(root.val);
+        prev = newTree
+    } else if (root.val) {
+        prev.right = new TreeNode(root.val);
+        prev = prev.right
+    }
+    evaluateTree(root.right);
+    return newTree
 
 };
 
 
 
+
+
 const result = evaluateTree(root.get());
 
-console.log(result);
+console.log(JSON.stringify(result, null, 5));
 
 
