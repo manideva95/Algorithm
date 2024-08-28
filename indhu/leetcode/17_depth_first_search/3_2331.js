@@ -13,19 +13,24 @@ class BinarySearch {
         this.root = null;
     }
 
-    transver(node, parent) {
-        if (!node) return
-        if (node.val === parent) return node;
+    transver(node) {
+        let queue = [node];
 
-        return this.transver(node.left, parent) || this.transver(node.right, parent)
-
+        while (queue.length) {
+            let tempNode = queue.shift();
+            if (!tempNode.left || !tempNode.right) {
+                return tempNode
+            }
+            if (tempNode.left) queue.push(tempNode.left);
+            if (tempNode.right) queue.push(tempNode.right);
+        }
     }
 
-    insert(parent, val) {
+    insert(val) {
         let newNode = new TreeNode(val);
         if (!this.root) this.root = newNode;
         else {
-            let node = this.transver(this.root, parent);
+            let node = this.transver(this.root);
             if (node.left) node.right = newNode;
             else node.left = newNode;
         }
@@ -37,46 +42,37 @@ class BinarySearch {
 }
 // Create tree
 let root = new BinarySearch();
-root.insert(null, 5);
-root.insert(5, 1);
-root.insert(5, 7)
-// root.insert(3, 2)
-// root.insert(3, 4)
-// root.insert(2, 1)
-// root.insert(6, null)
-// root.insert(6, 8)
-// root.insert(8, 7)
-// root.insert(8, 9)
+[1, 2, 3, null, 4].forEach(item => root.insert(item));
+
+
+
 
 
 let newTree = null, prev = null;
-var evaluateTree = function (root) {
+var evaluateTree = function (root, x, y) {
+
     // if (root.val == 1) return true;
     // else if (root.val == 0) return false;
     // else if (root.val == 2) return (evaluateTree(root.left) || evaluateTree(root.right));
     // else if (root.val == 3) return (evaluateTree(root.left) && evaluateTree(root.right));
     // return false;
-    if (!root) return newTree;
+    // if (!root) return newTree;
 
 
-    evaluateTree(root.left);
-    if (!newTree && root.val) {
-        newTree = new TreeNode(root.val);
-        prev = newTree
-    } else if (root.val) {
-        prev.right = new TreeNode(root.val);
-        prev = prev.right
-    }
-    evaluateTree(root.right);
-    return newTree
+    // evaluateTree(root.left);
+    // if (!newTree && root.val) {
+    //     newTree = new TreeNode(root.val);
+    //     prev = newTree
+    // } else if (root.val) {
+    //     prev.right = new TreeNode(root.val);
+    //     prev = prev.right
+    // }
+    // evaluateTree(root.right);
+    // return newTree
 
 };
 
-
-
-
-
-const result = evaluateTree(root.get());
+const result = evaluateTree(root.get(), 2, 3);
 
 console.log(JSON.stringify(result, null, 5));
 
