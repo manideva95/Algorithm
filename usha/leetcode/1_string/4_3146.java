@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/permutation-difference-between-two-strings/description/
+
 class Solution {
     public int findPermutationDifference(String s, String t) {
         int sum = 0;   

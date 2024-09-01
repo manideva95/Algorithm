@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/score-of-a-string/description/
+
 class Solution {
     public int scoreOfString(String s) {
         int result= 0;
