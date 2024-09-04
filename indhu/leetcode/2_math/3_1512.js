@@ -20,7 +20,9 @@ var numIdenticalPairs = function (nums) {
     n = 0
     arr = []
     for (let x of nums) {
+        console.log(arr[x], arr);
         if (arr[x]) {
+            console.log(n);
             n += arr[x]
             arr[x] += 1
         } else {
