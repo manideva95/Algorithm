@@ -7,27 +7,72 @@
  *     this.next = (next===undefined ? null : next)
  * }
  */
+
 class ListNode {
     constructor(data) {
-        this.data = data;
+        this.data = data
         this.next = null
     }
 }
-/**
- * @param {ListNode} head
- * @return {number}
- */
+
+class LinkedList {
+    constructor(head = null) {
+        this.head = head
+    }
+
+    addFirst(data) {
+        const newNode = new ListNode(data);
+        if (!this.head) {
+            this.head = newNode;
+            return;
+        }
+        let current = this.head;
+        while (current.next) {
+            current = current.next;
+        }
+        current.next = newNode;
+    }
+    get() {
+        return this.head
+    }
+}
 var getDecimalValue = function (head) {
+    console.log(head.data, '1')
+    if (head == null) return null
+    if (head.next == null) return head
+    let newHead = head.next
+    let curr = head
+    let prev = null
+    while (curr != null && curr.next != null) {
+        let temp = curr.next.next
+        curr.next.next = curr
+        if (prev == null) {
+            prev = curr
+        }
+        else {
+            prev.next = curr.next
+            prev = curr
+        }
 
+        curr.next = temp
+        curr = curr.next
+    }
+
+    return newHead
 };
-let a = [1, 0, 1]
-const listFromArray = a => a.length ? new ListNode(a[0], listFromArray(a.slice(1)))
-    : null;
-const arrayFromList = head => head ? [head.val].concat(arrayFromList(head.next))
-    : [];
+// let a = [1, 0, 1]
+// const listFromArray = a => a.length ? new ListNode(a[0], listFromArray(a.slice(1)))
+//     : null;
+// const arrayFromList = head => head ? [head.val].concat(arrayFromList(head.next))
+//     : [];
+let nodes = new LinkedList();
+[1, 2, 3, 4].forEach(element => {
+    nodes.addFirst(element)
+});
 
-console.log(this.data);
-const result = getDecimalValue(4009)
+
+// console.log(nodes);
+const result = getDecimalValue(nodes.get())
 console.log(result);
 
 // Observation:
