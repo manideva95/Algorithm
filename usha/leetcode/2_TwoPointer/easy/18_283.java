@@ -1,5 +1,9 @@
 // https://leetcode.com/problems/move-zeroes/description/
 
+// Topics
+// Array
+// Two Pointers
+
 class Solution {
     public void moveZeroes(int[] nums) {
         if (nums.length == 1) {
