@@ -11,19 +11,19 @@
 
 class Solution {
     // Function to find median of the matrix.
-    median(s, k) {
-        let count = 0;
-        for (let i = 0; i < s.length; i++) {
-            let set = new Set();
-            for (let j = i; j < s.length; j++) {
-                set.add(s[j]);
-                console.log(set, s[i])
-                if (set.size === k) count++;
-                if (set.size > k) break
+    median(arr, target) {
+        let ans = []
+        const recursion = (i, sum) => {
+            ans.push(sum);
+            if (i >= arr.length) return;
+            for (let j = i; j < arr.length; j++) {
+                recursion(j + 1, sum + arr[j])
             }
         }
-        return count
+        recursion(0, 0);
+        return ans
     }
 }
 
-console.log(new Solution().median('aba', 2))
+console.log(new Solution().median([1, 2, 1], 119))
+

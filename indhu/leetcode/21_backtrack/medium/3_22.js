@@ -15,6 +15,7 @@ var generateParenthesis = function (n) {
         if (open > close) {
             dfs(open, close + 1, s + ')')
         }
+        console.log(s);
 
         if (open < n) {
             dfs(open + 1, close, s + '(')
@@ -24,3 +25,5 @@ var generateParenthesis = function (n) {
 
     return arr
 };
+
+generateParenthesis(3)
